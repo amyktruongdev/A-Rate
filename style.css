@@ -17,51 +17,6 @@ body {
     font-weight: bold;
 }
 
-#card-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    margin: 20px;
-}
-
-.card {
-    width: 500px;
-    height:300px;
-    background-color: #FFF8D4;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 35px;
-    transition: all 0.4s;
-    &:hover{
-      transform: scale(1.02);
-      transition: all 0.4s;
-    }
-}
-
-.card-content {
-    margin: 20px;
-    font-family: "Verdana";
-    color: #000000;
-}
-
-.card-content h2 {
-    margin-top: 0;
-    font-size: 10px;
-    display: inline-block;
-    padding-left: 20px;
-    text-decoration: underline;
-    padding-top: 20px;
-    text-wrap: wrap;
-}
-
-.card img {
-    padding-top: 20px;
-    width: 35%;
-    height: auto;
-    float: left;
-}
-
 button {
     margin-right: auto;
     text-align: center;
