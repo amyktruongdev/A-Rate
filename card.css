@@ -21,7 +21,7 @@
 }
 
 .card-content {
-    margin: 20px;
+    margin: 15px;
     font-family: "Verdana";
     color: #000000;
 }
@@ -38,6 +38,7 @@
 
 .card img {
     width: 35%;
+    padding-top: 15px;
     height: auto;
     float: left;
 }
@@ -45,5 +46,12 @@
 .rating{
     float:left;
     padding-left: 30px;
-    width: 50%;
+    padding-top: 20px;
+    width: 33%;
+}
+
+#score{
+    float: left;
+    padding-left: 20px;
+    padding-top: 15px;
 }

@@ -31,9 +31,9 @@ const FAIRY_TAIL = "images/fairytail.png";
 
 // This is an array of strings (TV show titles)
 let titles = [
-    "Fresh Prince of Bel Air air air air air air",
-    "Curb Your Enthusiasm",
-    "East Los High", "Fresh Prince of Bel Air", "Curb Your Enthusiasm", "Curb Your Enthusiasm"
+    "Seven Deadly Sins",
+    "That Time I Got Reincarnated as a Slime",
+    "East Los High", "Surgeon Elise", "Samurai Champloo", "Fairy Tail"
 ];
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
