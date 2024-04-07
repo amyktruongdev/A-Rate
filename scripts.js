@@ -30,9 +30,9 @@ const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/
 
 // This is an array of strings (TV show titles)
 let titles = [
-    "Fresh Prince of Bel Air",
+    "Fresh Prince of Bel Air air air air air air",
     "Curb Your Enthusiasm",
-    "East Los High", "Fresh Prince of Bel Air"
+    "East Los High", "Fresh Prince of Bel Air", "Curb Your Enthusiasm", "Curb Your Enthusiasm"
 ];
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
@@ -58,7 +58,13 @@ function showCards() {
             imageURL = EAST_LOS_HIGH_POSTER_URL;
         }
         else if(i ==3){
+            imageURL = CURB_POSTER_URL;
+        }
+        else if(i ==4){
             imageURL = FRESH_PRINCE_URL;
+        }
+        else if(i ==5){
+            imageURL = CURB_POSTER_URL;
         }
 
         const nextCard = templateCard.cloneNode(true); // Copy the template card
@@ -86,10 +92,9 @@ function editCardContent(card, newTitle, newImageURL) {
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
 
-function quoteAlert() {
-    console.log("Button Clicked!")
-    alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");
-}
+//function quoteAlert() {
+    //console.log("Button Clicked!")
+    //alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");}
 
 function removeLastCard() {
     titles.pop(); // Remove last item in titles array
