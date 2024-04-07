@@ -32,7 +32,7 @@ const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/
 let titles = [
     "Fresh Prince of Bel Air",
     "Curb Your Enthusiasm",
-    "East Los High"
+    "East Los High", "Fresh Prince of Bel Air"
 ];
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
@@ -56,6 +56,9 @@ function showCards() {
             imageURL = CURB_POSTER_URL;
         } else if (i == 2) {
             imageURL = EAST_LOS_HIGH_POSTER_URL;
+        }
+        else if(i ==3){
+            imageURL = FRESH_PRINCE_URL;
         }
 
         const nextCard = templateCard.cloneNode(true); // Copy the template card
