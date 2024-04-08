@@ -43,6 +43,7 @@ let titles = [
 function showCards() {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
+    //document.querySelector <-- finding specific things in the HTML document
     const templateCard = document.querySelector(".card");
     
     for (let i = 0; i < titles.length; i++) {
