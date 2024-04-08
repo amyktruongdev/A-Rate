@@ -30,8 +30,10 @@ function showCards() {
 
         // This part of the code doesn't scale very well! After you add your
         // own data, you'll need to do something totally different here.
-        for(j=0;j<imageURL.length;j++){
+
+        for(j=1;j<imageURL.length;j++){
          image = imageURL[j];
+        }
 
         
 
@@ -40,7 +42,7 @@ function showCards() {
         // Edit title and image //imageURL works
         cardContainer.appendChild(nextCard); // Add new card to the container
 }
-}
+
 }
 function editCardContent(card, newTitle, newImageURL) { //edits card content by grabbig the first element of classes h2 and img and assigning them based on data values above
     card.style.display = "block";
