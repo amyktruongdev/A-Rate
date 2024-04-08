@@ -7,10 +7,10 @@
     message.innerHTML = "data: " + title.value + " " + score.value + " " + myfile.value;
 }*/
 
-const FRESH_PRINCE_URL = "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
+/*const FRESH_PRINCE_URL = "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
 const CURB_POSTER_URL = "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
 const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
-const FAIRY_TAIL = "images/fairytail.png";
+const FAIRY_TAIL = "images/fairytail.png";*/
 
 // This is an array of strings (TV show titles)
 let titles = [
@@ -19,7 +19,7 @@ let titles = [
     "East Los High", "Surgeon Elise", "Samurai Champloo", "Fairy Tail"
 ];
 
-let imageURL = ["images/fairytail.png"];
+const imageURL=["images/fairytail.png","images/fairytail.png","https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg","https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg","https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg","https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg"];
 
 function showCards() {
     const cardContainer = document.getElementById("card-container");
@@ -30,21 +30,25 @@ function showCards() {
 
         // This part of the code doesn't scale very well! After you add your
         // own data, you'll need to do something totally different here.
-        let imageURL = "";
-        document.getElementById("imageUrl").src=imageURL[0];
+        for(j=0;j<imageURL.length;j++){
+         image = imageURL[j];
+
+        
 
  const nextCard = templateCard.cloneNode(true); // Copy the template card
-        editCardContent(nextCard, title, imageURL); // Edit title and image
+        editCardContent(nextCard, title, image);
+        // Edit title and image //imageURL works
         cardContainer.appendChild(nextCard); // Add new card to the container
 }
 }
-function editCardContent(card, newTitle, newImageURL) {
+}
+function editCardContent(card, newTitle, newImageURL) { //edits card content by grabbig the first element of classes h2 and img and assigning them based on data values above
     card.style.display = "block";
 
     const cardHeader = card.querySelector("h2");
     cardHeader.textContent = newTitle;
 
-    const cardImage = card.querySelector("img");
+    const cardImage = card.querySelector("img");//taking first element of img class
     cardImage.src = newImageURL;
     cardImage.alt = newTitle + " Poster";
 
