@@ -35,6 +35,7 @@ let titles = [
     "That Time I Got Reincarnated as a Slime",
     "East Los High", "Surgeon Elise", "Samurai Champloo", "Fairy Tail"
 ];
+
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
 
