@@ -93,11 +93,17 @@ function editCardContent(card, newTitle, newImageURL) {
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
 
-//function quoteAlert() {
-    //console.log("Button Clicked!")
-    //alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");}
-
 function removeLastCard() {
-    titles.pop(); // Remove last item in titles array
+    var userChoice; //ok or no option
+    //while loop that clears all anime titles after pressing Clear button and asks for user confirmation.
+    if(confirm("Are you sure you want to clear your anime list?") ==true){
+        while(titles.length){
+            let i = titles.pop();
+        }
+        userChoice=alert("List is being cleared!");
+    }
+    else{
+        userChoice=alert("List not canceled!");
+    }
     showCards(); // Call showCards again to refresh
 }
