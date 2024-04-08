@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="card.css" />
     <link rel="stylesheet" href="options.css" />
+    <link rel="stylesheet" href="form.css" />
     <script type="text/javascript" src="scripts.js"></script>
 </head>
 
@@ -17,14 +18,33 @@
     </header>
 
     <div class="introText">
-        <p>Anime has been around since 1917, how will you keep track of how many you’ve watched?! A-Rate lets you add any show you’ve watched and your ratings for them!</p>
+        <p>Anime has been around since 1917, how will you keep track of how many you’ve watched?! A-Rate lets you add any show you’ve watched and your ratings for them! Below is the options bar. Add anime lets you add shows, H to L sorts the ratings from high to low, and L to H sorts it from low to high, and the clear button clears your entire list.</p>
     </div>
+
     <div class="options">
         <button id="add">Add Anime</button>
         <button>H to L</button>
         <button>L to H</button>
         <button onclick="removeLastCard();">Clear</button>
     </div>
+    <form id="formBox">
+        <h1>Make an anime rating.</h1>
+    <div class="inputAnime">
+        <label for="title">Anime name:</label>
+        <input type="text" id="title" placeholder="Anime name"/>
+    </div>
+    <div class="inputAnime">
+        <label for="starRating">Rating:</label>
+        <input type="number" step="0.01" min="0" placeholder="Rating Value"/>
+    </div>
+    <div class="inputAnime">
+        <label for="myfile">Select a file:</label>
+        <input type="file" id="myfile" name="myfile">
+    </div>
+    <div class="inputAnime">
+        <button id="btn">Add anime</button>
+    </div>
+    </form>
     <div id="card-container">
 
     </div>

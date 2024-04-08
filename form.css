@@ -1,0 +1,17 @@
+#formBox{
+    margin: 0px 30px;
+    padding: 30px;
+    display: inline-block;
+    background-color: pink;
+    outline-style: dotted;
+    outline-color: red;
+}
+
+.inputAnime{
+    float: center;
+}
+
+.btn{
+    display:flex;
+    padding-left: 300px;
+}
