@@ -1,11 +1,11 @@
 
-function addAnime(){
+/*function addAnime(){
     let title = document.querySelector("#title");
     let score = document.querySelector("#score");
     let myfile = document.querySelector("#myfile");
 
     message.innerHTML = "data: " + title.value + " " + score.value + " " + myfile.value;
-}
+}*/
 
 const FRESH_PRINCE_URL = "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
 const CURB_POSTER_URL = "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
@@ -19,14 +19,24 @@ let titles = [
     "East Los High", "Surgeon Elise", "Samurai Champloo", "Fairy Tail"
 ];
 
+let imageURL = ["images/fairytail.png"];
+
 function showCards() {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
     const templateCard = document.querySelector(".card");
+    for (let i = 0; i < titles.length; i++) {
+        let title = titles[i];
+
+        // This part of the code doesn't scale very well! After you add your
+        // own data, you'll need to do something totally different here.
+        let imageURL = "";
+        document.getElementById("imageUrl").src=imageURL[0];
 
  const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, title, imageURL); // Edit title and image
         cardContainer.appendChild(nextCard); // Add new card to the container
+}
 }
 function editCardContent(card, newTitle, newImageURL) {
     card.style.display = "block";
