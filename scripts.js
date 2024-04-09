@@ -47,7 +47,7 @@ const anime8={
     titles: "Parasyte: The Maxim",
     imageURL: "https://cdn.myanimelist.net/images/anime/3/73178.jpg",
     ratings: 9.10,
-    synopsis: "A guy's right hand becomes an alien and now he has to protect his world from man eating aliens. He learns that the aliens weren't all that bad. I love the anime's opening song."
+    synopsis: "A guy's right hand becomes an alien and now he's friends with it. Ironically, he has to protect his world from man eating aliens. It had a bittersweet ending. I love the anime's opening song."
 }
 const anime9={
     titles: "Solo Leveling",
@@ -59,7 +59,7 @@ const anime10={
     titles: "Violet Evergarden",
     imageURL: "https://cdn.myanimelist.net/images/anime/1795/95088.jpg",
     ratings: 9.65,
-    synopsis: "Violet Evergarden is beautifuly animated show where a girl who has only known fighting her entire life tries to find the meaning of what the phrase I love you."
+    synopsis: "Violet Evergarden is a beautifuly animated show where a girl who has only known fighting her entire life tries to find the meaning of I love you."
 }
 const anime11={
     titles: "Demon Slayer",
@@ -92,7 +92,7 @@ const anime15={
     titles: "Sword Art Online",
     imageURL: "https://cdn.myanimelist.net/images/anime/11/39717.jpg",
     ratings: 10,
-    synopsis: "I can't explain how much I love this show. It even taught me what love was. A guy plays a VR game and can't log out. If you die in game you die in real life."
+    synopsis: "A guy plays a VR game and can't log out. If you die in game you die in real life. I can't explain how much I love this show. It even taught me what love was. "
 }
 const anime16={
     titles: "The Future Diary",
@@ -143,13 +143,13 @@ const anime23={
     titles: "Assassination Classroom",
     imageURL: "https://cdn.myanimelist.net/images/anime/5/75639.jpg",
     ratings: 9.25,
-    synopsis: "A yellow alien looking squid becomes a teacher. All of his students are tasked with killing him because he would destory the world. I cried so much."
+    synopsis: "A yellow alien looking squid becomes a teacher. All of his students are tasked with killing him because he's destined to destory the world. I cried so much."
 }
 const anime24={
     titles: "School Babysitters",
     imageURL: "https://cdn.myanimelist.net/images/anime/8/89978.jpg",
     ratings: 8.68,
-    synopsis: "This anime hit real close to home. A boy and his baby brother lose his parents in a car accident and try to navigate life together. It's tough but at least they have each other."
+    synopsis: "A teenage boy and his baby brother lose their parents in a car accident and try to navigate life together. It's tough but at least they have each other. A really wholesome show."
 }
 const anime = [anime1,anime2,anime3,anime4,anime5,anime6,anime7,anime8,anime9,anime10,anime11,anime12,anime13,anime14,anime15,anime16,anime17,anime18,anime19,anime20,anime21,anime22,anime23,anime24];
 
