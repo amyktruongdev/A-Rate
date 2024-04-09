@@ -16,7 +16,8 @@ body {
 }
 
 .introText{
-    background-color: #E2C1AE;
+    background-color: #ffcece;
+    font-family: "Madimi One", sans-serif;
     padding: 40px;
     margin: 25px 30px;
     margin-left: 10%;
@@ -24,6 +25,8 @@ body {
     border-radius: 20px;
     text-align: center;
     font-weight: bold;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    border:1px solid black;
 }
 
 button {

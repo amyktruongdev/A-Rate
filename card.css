@@ -15,41 +15,40 @@
 
 .card {
     width: 500px;
-    height:290px;
-    padding-left: 15px;
+    height:280px;
+    padding-left: 25px;
     background-color: #FFF8D4;
     border: 1px solid #ccc;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: px;
-    transition: all 0.4s;
-
-
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    border:1px solid black;
 }
-.card :hover{
+
+
+
+.card:hover{
     transform: scale(1.02);
     transition: all 0.4s;
   }
 
 .card-content {
-    margin: 15px;
     font-family: "Verdana";
     color: #000000;
 }
 
 .card-content h2 {
     margin-top: 0;
-    font-size: 12px;
+    font-size: 18px;
     display: inline-block;
     padding-left: 20px;
     text-decoration: underline;
     padding-top: 30px;
-    text-wrap: wrap;
+    font-family: "Madimi One", sans-serif;
 }
 
 .card img {
     width: 30%;
-    padding-top: 10px;
+    padding-top: 30px;
     height: auto;
     float: left;
 }
@@ -76,4 +75,11 @@
 #summary{
     margin: 0;
     padding-top: 2px;
+    font-family: "Madimi One", sans-serif;
+    font-size: 14px;
 }
+
+#star{
+    padding-top:6px;
+}
+

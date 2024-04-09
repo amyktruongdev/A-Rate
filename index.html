@@ -3,12 +3,17 @@
 
 <head>
     <title>A-Rate</title>
-    <meta name="description" content="A Catalog of Shows Set in Los Angeles">
+    <meta name="description" content="A-Rate, an Anime Rating List.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="card.css" />
     <link rel="stylesheet" href="options.css" />
     <link rel="stylesheet" href="form.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
     <script type="text/javascript" src="scripts.js"></script>
 </head>
 
@@ -29,20 +34,18 @@
     </div>
 
 <div id="card-container"></div>
-    <div class="card" style="display: none;">
-        <div class="content">
+    <div class="card" style="display: none;">   
             <div class="card-content">
-                <h2>TV Show Title</h2>
+                <h2>Anime Title</h2>
                 <img src="" alt="TV Show Poster">
             </div>
             <div class="rating">
-                <img src="images/star.png">
+                <img src="images/star.png" id="star">
                 <h2 id="score">Score</h2>
             </div>
             <div class="quote">
-                <p id="summary">meow meow meow meow meow meow meow meow meow meow meow meowmeow meow meow meow meow meow meow meow meow</p>
+                <p id="summary">My synposis of anime</p>
             </div>
         </div>
-</div>
 </body>
 </html>
