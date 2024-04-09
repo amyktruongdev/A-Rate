@@ -16,7 +16,7 @@
 /*add anime button label too big disrupts button container, gave it an ID to change the add anime button specifically*/
 
 .options button:hover{
-    background-color: pink;
+    background-color: rgb(153, 86, 97);
 }
 
 #clear{

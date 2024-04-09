@@ -2,16 +2,23 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-color: pink;
 }
 
 .main-header {
-    margin: 25px 30px;
+    /*margin: 25px 30px;*/
+    padding-top: 30px;
+    margin-left: 25%;
+    margin-right: 5%;
+    display: block;
 }
 
 .introText{
     background-color: #E2C1AE;
-    padding: 30px;
+    padding: 40px;
     margin: 25px 30px;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 20px;
     text-align: center;
     font-weight: bold;
@@ -20,7 +27,7 @@ body {
 button {
     margin-right: auto;
     text-align: center;
-    background-color: #666;
+    background-color: #e77d7d;
     border: none;
     padding-left: 10px;
     padding-right: 10px;
