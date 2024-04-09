@@ -5,19 +5,20 @@
 
 .options button{
     height:40px; 
-    width:100px; 
+    width:150px; 
     margin: -20px -50px; 
     position:relative;
     top:50%; 
-    left:38.3%;
+    left:39.3%;
     margin: 0 auto;
 }
 
 /*add anime button label too big disrupts button container, gave it an ID to change the add anime button specifically*/
-#add{
-    width: 130px;
-}
 
 .options button:hover{
     background-color: pink;
+}
+
+#clear{
+    width: 100px;
 }
