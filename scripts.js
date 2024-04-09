@@ -128,9 +128,8 @@ const anime24={
     imageURL: "https://cdn.myanimelist.net/images/anime/8/89978.jpg",
     ratings: 8.68
 }
-
-
 const anime = [anime1,anime2,anime3,anime4,anime5,anime6,anime7,anime8,anime9,anime10,anime11,anime12,anime13,anime14,anime15,anime16,anime17,anime18,anime19,anime20,anime21,anime22,anime23,anime24];
+
 
 function showCards() {
     const cardContainer = document.getElementById("card-container");
