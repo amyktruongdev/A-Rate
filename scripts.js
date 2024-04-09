@@ -44,16 +44,14 @@ function showCards() {
         let rating = r.ratings.toFixed(2); //toFixed func incase i want to rate a show as "7.00" without toFixedFunc it outputs 7 without the 0's.
 
  const nextCard = templateCard.cloneNode(true); // Copy the template card
-        editCardContent(nextCard, title, image,rating);
-        // Edit title and image //imageURL works
-    
+        editCardContent(nextCard, title, image,rating); //edits title and image
         cardContainer.appendChild(nextCard); // Add new card to the container
     }           
 }
 
 
 
-function editCardContent(card, newTitle, newImageURL,newRating) { //edits card content by grabbig the first element of classes h2 and img and assigning them based on data values above
+function editCardContent(card, newTitle, newImageURL,newRating) { //edits card content by grabbig the element of classes and id's and assigning them based on data values above
     card.style.display = "block";
 
     //note querySelector takes first element, use period "." for a class and "#" for an ID
@@ -68,9 +66,7 @@ function editCardContent(card, newTitle, newImageURL,newRating) { //edits card c
 
     cardImage.alt = newTitle + " Poster"; //if image doesnt load
 
-    // You can use console.log to help you debug!
-    // View the output by right clicking on your website,
-    // select "Inspect", then click on the "Console" tab
+//used console to help me figure out why images weren't displaying properly, didn't really want to change this one.
     console.log("new card:", newTitle, "- html: ", card);
 }
 
