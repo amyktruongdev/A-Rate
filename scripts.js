@@ -49,8 +49,6 @@ function showCards() {
     }           
 }
 
-
-
 function editCardContent(card, newTitle, newImageURL,newRating) { //edits card content by grabbig the element of classes and id's and assigning them based on data values above
     card.style.display = "block";
 
@@ -72,3 +70,36 @@ function editCardContent(card, newTitle, newImageURL,newRating) { //edits card c
 
 document.addEventListener("DOMContentLoaded", showCards);
 
+function removeAllCards() {
+    var userChoice; //ok or no option
+    //while loop that clears all anime titles after pressing Clear button and asks for user confirmation.
+    if(confirm("Are you sure you want to clear your anime list?") ==true){
+        while(anime.length){//while loop pops out all animes
+            anime.pop();
+        }
+        userChoice=alert("List IS being cleared!");
+    }
+    else{
+        userChoice=alert("List is NOT being canceled!");
+    }
+    showCards(); // Call showCards again to refresh
+}
+
+//sorts anime cards based on ratings from high to low
+
+
+
+        anime.sort(function(a,b){
+            return parseFloat(a.ratings) - parseFloat(b.ratings);
+        });
+    
+
+/*document.getElementById("demo").addEventListener("click", myFunction);
+    anime.sort(function lowToHigh(a,b){
+        return parseFloat(a.ratings) - parseFloat(b.ratings);
+    });
+
+    anime.sort(function highToLow(a,b){
+        return parseFloat(b.ratings) - parseFloat(a.ratings);
+    });
+*/
