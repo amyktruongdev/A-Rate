@@ -1,8 +1,16 @@
 #card-container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: center;
-    margin: 20px;
+    /*grid-template-columns: auto auto;*/
+    place-content: center;
+    grid-template-columns: auto auto;
+    margin: 30px;
+    grid-gap: 35px;
+    /*justify-content: center;
+    place-content: center;
+    margin: 30px;
+    width: 100%;
+    margin: 100%;
+    padding:0%;*/
 }
 
 .card {
@@ -13,13 +21,15 @@
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 35px;
+    margin: px;
     transition: all 0.4s;
-    &:hover{
-      transform: scale(1.02);
-      transition: all 0.4s;
-    }
+
+
 }
+.card :hover{
+    transform: scale(1.02);
+    transition: all 0.4s;
+  }
 
 .card-content {
     margin: 15px;
