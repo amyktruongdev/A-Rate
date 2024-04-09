@@ -1,49 +1,51 @@
+//creating objects of anime (anime1,anime2,anime3,anime4,anime5,anime6)
 
-/*function addAnime(){
-    let title = document.querySelector("#title");
-    let score = document.querySelector("#score");
-    let myfile = document.querySelector("#myfile");
-
-    message.innerHTML = "data: " + title.value + " " + score.value + " " + myfile.value;
-}*/
-
-/*const FRESH_PRINCE_URL = "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
-const CURB_POSTER_URL = "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
-const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
-const FAIRY_TAIL = "images/fairytail.png";*/
-
-// This is an array of strings (TV show titles)
-let titles = [
-    "Seven Deadly Sins",
-    "That Time I Got Reincarnated as a Slime",
-    "East Los High", "Surgeon Elise", "Samurai Champloo", "Fairy Tail"
-];
-
-const imageURL=["images/fairytail.png","images/fairytail.png","https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg","https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg","https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg","https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg"];
+const anime1={
+    titles: "Seven Deadly Sins",
+    imageURL: "https://cdn.myanimelist.net/images/anime/8/65409.jpg"
+}
+const anime2={
+    titles: "That Time I Got Reincarnated as a Slime",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1069/123309.jpg"
+}
+const anime3={
+    titles: "Neon Genesis Evangelion",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1314/108941.jpg"
+}
+const anime4={
+    titles: "Surgeon Elise",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1449/140344.jpg"
+}
+const anime5={
+    titles: "Samurai Champloo",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1375/121599.jpg"
+}
+const anime6={
+    titles: "Fairy Tail",
+    imageURL: "images/fairytail.png"
+}
+const anime = [anime1,anime2,anime3,anime4,anime5,anime6];
 
 function showCards() {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
     const templateCard = document.querySelector(".card");
-    for (let i = 0; i < titles.length; i++) {
-        let title = titles[i];
 
-        // This part of the code doesn't scale very well! After you add your
-        // own data, you'll need to do something totally different here.
-
-        for(j=1;j<imageURL.length;j++){
-         image = imageURL[j];
-        }
-
-        
+    for (let i = 0; i < anime.length; i++) {
+        const r=anime[i];
+        let title =r.titles;
+        let image=r.imageURL;
 
  const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, title, image);
         // Edit title and image //imageURL works
+    
         cardContainer.appendChild(nextCard); // Add new card to the container
+    }           
 }
 
-}
+
+
 function editCardContent(card, newTitle, newImageURL) { //edits card content by grabbig the first element of classes h2 and img and assigning them based on data values above
     card.style.display = "block";
 
