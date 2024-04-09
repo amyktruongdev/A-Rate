@@ -23,14 +23,114 @@ const anime4={
 const anime5={
     titles: "Samurai Champloo",
     imageURL: "https://cdn.myanimelist.net/images/anime/1375/121599.jpg",
-    ratings: 9
+    ratings: 8.30
 }
 const anime6={
     titles: "Fairy Tail",
     imageURL: "images/fairytail.png",
-    ratings: 9.88
+    ratings: 10
 }
-const anime = [anime1,anime2,anime3,anime4,anime5,anime6];
+
+const anime7={
+    titles: "Attack on Titan: The Final Season",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1279/131078.jpg",
+    ratings: 9.90
+}
+const anime8={
+    titles: "Parasyte: The Maxim",
+    imageURL: "https://cdn.myanimelist.net/images/anime/3/73178.jpg",
+    ratings: 9.10
+}
+const anime9={
+    titles: "Solo Leveling",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1411/142391.jpg",
+    ratings: 10
+}
+const anime10={
+    titles: "Violet Evergarden",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1795/95088.jpg",
+    ratings: 9.30
+}
+const anime11={
+    titles: "Demon Slayer",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1286/99889.jpg",
+    ratings: 9.50
+}
+const anime12={
+    titles: "Jujutsu Kaisen",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1171/109222.jpg",
+    ratings: 7.20
+}
+
+
+
+const anime13={
+    titles: "Darling in the FranXX",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1614/90408.jpg",
+    ratings: 4.15
+}
+const anime14={
+    titles: "Akame ga Kill!",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1429/95946.jpg",
+    ratings: 5.30
+}
+const anime15={
+    titles: "Sword Art Online",
+    imageURL: "https://cdn.myanimelist.net/images/anime/11/39717.jpg",
+    ratings: 9.95
+}
+const anime16={
+    titles: "The Future Diary",
+    imageURL: "https://cdn.myanimelist.net/images/anime/13/33465.jpg",
+    ratings: 6
+}
+const anime17={
+    titles: "Blue Exorcist",
+    imageURL: "https://cdn.myanimelist.net/images/anime/10/75195.jpg",
+    ratings: 9.55
+}
+const anime18={
+    titles: "Nana",
+    imageURL: "https://cdn.myanimelist.net/images/anime/2/11232.jpg",
+    ratings: 10
+}
+
+
+
+const anime19={
+    titles: "Hunter x Hunter",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1337/99013.jpg",
+    ratings: 9.60
+}
+const anime20={
+    titles: "Tower of God",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1702/106229.jpg",
+    ratings: 5.30
+    //didnt closely follow manhwa ruined the show for me because the plot in the manhwa was already good
+}
+const anime21={
+    titles: "Erased",
+    imageURL: "https://cdn.myanimelist.net/images/anime/10/77957.jpg",
+    ratings: 6.34
+}
+const anime22={
+    titles: "Black Bullet",
+    imageURL: "https://cdn.myanimelist.net/images/anime/1292/94693.jpg",
+    ratings: 5.34
+}
+const anime23={
+    titles: "Assassination Classroom",
+    imageURL: "https://cdn.myanimelist.net/images/anime/5/75639.jpg",
+    ratings: 9
+}
+const anime24={
+    titles: "School Babysitters",
+    imageURL: "https://cdn.myanimelist.net/images/anime/8/89978.jpg",
+    ratings: 8.68
+}
+
+
+const anime = [anime1,anime2,anime3,anime4,anime5,anime6,anime7,anime8,anime9,anime10,anime11,anime12,anime13,anime14,anime15,anime16,anime17,anime18,anime19,anime20,anime21,anime22,anime23,anime24];
 
 function showCards() {
     const cardContainer = document.getElementById("card-container");
@@ -43,6 +143,10 @@ function showCards() {
         let image=r.imageURL;
         let rating = r.ratings.toFixed(2); //toFixed func incase i want to rate a show as "7.00" without toFixedFunc it outputs 7 without the 0's.
 
+        //******FIX IF HAVE TIME MAKE IT SO THAT ALL WHOLE NUMBERS DONT RETURN 2 DECIMAL PLACES*******
+        if(r.ratings==10){
+            rating = r.ratings;
+        }
  const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, title, image,rating); //edits title and image
         cardContainer.appendChild(nextCard); // Add new card to the container
@@ -85,21 +189,33 @@ function removeAllCards() {
     showCards(); // Call showCards again to refresh
 }
 
-//sorts anime cards based on ratings from high to low
+
+document.addEventListener('DOMContentLoaded',function(){
 
 
+function highToLow(){
+    anime.sort(function(a,b){
+        return parseFloat(b.ratings) - parseFloat(a.ratings);
+        
+    });
+    console.log(anime);
+    showCards();
+}
 
+document.getElementById('highToLow').addEventListener('click',highToLow);
+});
+
+document.addEventListener('DOMContentLoaded',function(){
+
+
+    function lowToHigh(){
         anime.sort(function(a,b){
             return parseFloat(a.ratings) - parseFloat(b.ratings);
+            
         });
+        console.log(anime);
+        showCards();
+    }
     
-
-/*document.getElementById("demo").addEventListener("click", myFunction);
-    anime.sort(function lowToHigh(a,b){
-        return parseFloat(a.ratings) - parseFloat(b.ratings);
+    document.getElementById('lowToHigh').addEventListener('click',lowToHigh);
     });
-
-    anime.sort(function highToLow(a,b){
-        return parseFloat(b.ratings) - parseFloat(a.ratings);
-    });
-*/
