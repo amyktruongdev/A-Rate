@@ -14,40 +14,20 @@
 <body>
 
     <header class="main-header">
-        <img src="images/A-rate Title.png" width="100%";>
+        <img src="images/A-rate Title.png" width="67%";>
     </header>
 
     <div class="introText">
-        <p>Anime has been around since 1917, how will you keep track of how many you’ve watched?! A-Rate lets you add any show you’ve watched and your ratings for them! Below is the options bar. Add anime lets you add shows, H to L sorts the ratings from high to low, and L to H sorts it from low to high, and the clear button clears your entire list.</p>
+        <p>Anime has been a huge influence in my life, and I've made a catalog that has some of the animes I've really enjoyed and maybe didn't enjoy! Below is the options bar that can sort the ratings and clear the ratings. I guess I added the clear button incase you aren't happy with my ratings and don't want to see 'em! You can refresh the page if you want to see them again.</p>
     </div>
 
     <div class="options">
-        <button id="add">Add Anime</button>
-        <button>H to L</button>
-        <button>L to H</button>
-        <button onclick="removeAllCards();">Clear</button>
+        <button id="highToLow" type="button">High to Low</button>
+        <button id="lowToHigh" type="button">Low to High</button>
+        <button onclick="removeAllCards();" id="clear">Clear</button>
     </div>
-    <form id="formBox">
-        <h1>Make an anime rating.</h1>
-    <div class="inputAnime">
-        <label for="title">Anime name:</label>
-        <input type="text" id="title" placeholder="Anime name"/>
-    </div>
-    <div class="inputAnime">
-        <label for="starRating">Rating:</label>
-        <input type="number" step="0.01" min="0" placeholder="Rating Value"/>
-    </div>
-    <div class="inputAnime">
-        <label for="myfile">Select a file:</label>
-        <input type="file" id="myfile" name="myfile">
-    </div>
-    <div class="inputAnime">
-        <button id="btn">Add anime</button>
-    </div>
-    </form>
-    <div id="card-container">
 
-    </div>
+    <div id="card-container"></div>
     <div class="card" style="display: none;">
         <div class="card-content">
             <h2>TV Show Title</h2>
@@ -55,16 +35,11 @@
         </div>
         <div class="rating">
             <img src="images/star.png">
-            <h2 id="score">9.20</h2>
+            <h2 id="score">Score</h2>
         </div>
-
+        <div class="quote">
+            <p id="summary">meow meow meow meow meow meow meow meow meow meow meow meowmeow meow meow meow meow meow meow meow meow</p>
+        </div>
     </div>
 </body>
-
 </html>
-
-    <!--<div class="footer">
-        <button onclick="quoteAlert();">
-            Get A Quote!
-        </button>
-    </div>-->
