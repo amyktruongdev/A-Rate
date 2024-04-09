@@ -1,19 +1,14 @@
 /*Buttons for adding an anime, sorting from high to low or low to high*/
 .options{
-
+   position: relative;
 }
 
 .options button{
-    height:40px; 
-    width:150px; 
-    margin: -20px -50px; 
     position:relative;
     top:50%; 
-    left:39.3%;
-    margin: 0 auto;
+    left:33%;
+    padding: 0 15 10px;
 }
-
-/*add anime button label too big disrupts button container, gave it an ID to change the add anime button specifically*/
 
 .options button:hover{
     background-color: rgb(153, 86, 97);
