@@ -2,27 +2,33 @@
 
 const anime1={
     titles: "Seven Deadly Sins",
-    imageURL: "https://cdn.myanimelist.net/images/anime/8/65409.jpg"
+    imageURL: "https://cdn.myanimelist.net/images/anime/8/65409.jpg",
+    ratings: 9.45
 }
 const anime2={
     titles: "That Time I Got Reincarnated as a Slime",
-    imageURL: "https://cdn.myanimelist.net/images/anime/1069/123309.jpg"
+    imageURL: "https://cdn.myanimelist.net/images/anime/1069/123309.jpg",
+    ratings: 7.50
 }
 const anime3={
     titles: "Neon Genesis Evangelion",
-    imageURL: "https://cdn.myanimelist.net/images/anime/1314/108941.jpg"
+    imageURL: "https://cdn.myanimelist.net/images/anime/1314/108941.jpg",
+    ratings: 8.35
 }
 const anime4={
     titles: "Surgeon Elise",
-    imageURL: "https://cdn.myanimelist.net/images/anime/1449/140344.jpg"
+    imageURL: "https://cdn.myanimelist.net/images/anime/1449/140344.jpg",
+    ratings: 9.30
 }
 const anime5={
     titles: "Samurai Champloo",
-    imageURL: "https://cdn.myanimelist.net/images/anime/1375/121599.jpg"
+    imageURL: "https://cdn.myanimelist.net/images/anime/1375/121599.jpg",
+    ratings: 9
 }
 const anime6={
     titles: "Fairy Tail",
-    imageURL: "images/fairytail.png"
+    imageURL: "images/fairytail.png",
+    ratings: 9.88
 }
 const anime = [anime1,anime2,anime3,anime4,anime5,anime6];
 
@@ -35,9 +41,10 @@ function showCards() {
         const r=anime[i];
         let title =r.titles;
         let image=r.imageURL;
+        let rating = r.ratings.toFixed(2); //toFixed func incase i want to rate a show as "7.00" without toFixedFunc it outputs 7 without the 0's.
 
  const nextCard = templateCard.cloneNode(true); // Copy the template card
-        editCardContent(nextCard, title, image);
+        editCardContent(nextCard, title, image,rating);
         // Edit title and image //imageURL works
     
         cardContainer.appendChild(nextCard); // Add new card to the container
@@ -46,15 +53,20 @@ function showCards() {
 
 
 
-function editCardContent(card, newTitle, newImageURL) { //edits card content by grabbig the first element of classes h2 and img and assigning them based on data values above
+function editCardContent(card, newTitle, newImageURL,newRating) { //edits card content by grabbig the first element of classes h2 and img and assigning them based on data values above
     card.style.display = "block";
 
-    const cardHeader = card.querySelector("h2");
+    //note querySelector takes first element, use period "." for a class and "#" for an ID
+    const cardHeader = card.querySelector("h2"); //anime title
     cardHeader.textContent = newTitle;
 
-    const cardImage = card.querySelector("img");//taking first element of img class
+    const cardImage = card.querySelector("img");//anime pic 
     cardImage.src = newImageURL;
-    cardImage.alt = newTitle + " Poster";
+
+    const cardRating = card.querySelector("#score"); //anime rating
+    cardRating.textContent= newRating;
+
+    cardImage.alt = newTitle + " Poster"; //if image doesnt load
 
     // You can use console.log to help you debug!
     // View the output by right clicking on your website,
