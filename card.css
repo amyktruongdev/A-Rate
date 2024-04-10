@@ -1,16 +1,11 @@
+/*Styling for card items*/
+
 #card-container {
     display: grid;
-    /*grid-template-columns: auto auto;*/
     place-content: center;
     grid-template-columns: auto auto;
     margin: 30px;
     grid-gap: 35px;
-    /*justify-content: center;
-    place-content: center;
-    margin: 30px;
-    width: 100%;
-    margin: 100%;
-    padding:0%;*/
 }
 
 .card {
@@ -24,12 +19,10 @@
     border:1px solid black;
 }
 
-
-
 .card:hover{
     transform: scale(1.02);
     transition: all 0.4s;
-  }
+}
 
 .card-content {
     font-family: "Verdana";
@@ -57,13 +50,14 @@
     float:left;
     padding-left: 20px;
     padding-top: 5px;
-    width: 33%;
+    width: 20%;
 }
 
 #score{
     display: flex;
     padding-left: 10px;
     padding-top: 0px;
+    font-size: arial;
 }
 
 .quote{
@@ -80,6 +74,6 @@
 }
 
 #star{
-    padding-top:6px;
+    padding-top:18px;
 }
 

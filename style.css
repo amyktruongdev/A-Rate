@@ -1,14 +1,13 @@
+/*Styling for intro text and website header!!*/
 html,
 body {
     margin: 0;
     padding: 0;
-    /*width:100%;*/
     height: auto;
     background-color: #D7FAF8;
 }
 
 .main-header {
-    /*margin: 25px 30px;*/
     padding-top: 30px;
     margin-left: 25%;
     margin-right: 5%;
@@ -16,7 +15,6 @@ body {
 }
 
 .introText{
-    /*background-color: #ffcece;*/
     background-color: #a9afc6;
     font-family: "Madimi One", sans-serif;
     padding: 40px;

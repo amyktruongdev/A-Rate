@@ -60,7 +60,7 @@ const anime9={
     titles: "Solo Leveling",
     imageURL: "https://cdn.myanimelist.net/images/anime/1411/142391.jpg",
     ratings: 10,
-    synopsis: "Solo leveling was a manhwa that just recently became an anime. This is the most recent anime I finished watching. The animation and plot is the best I've seen in a long time even though it doesn't follow the manhwa."
+    synopsis: "This is the most recent anime I finished watching. Solo leveling was a manhwa that just came out as an anime this season. The animation and plot is the best I've seen in a long time."
 }
 const anime10={
     titles: "Violet Evergarden",
@@ -84,7 +84,7 @@ const anime12={
 const anime13={
     titles: "Darling in the FranXX",
     imageURL: "https://cdn.myanimelist.net/images/anime/1614/90408.jpg",
-    ratings: 4.15,
+    ratings: 2.15,
     synopsis: "I really disliked this show. The anime left out so much detail such as who the characters were fighting and why were they fighting them. The manga was made after the anime to be better but it just got worse."
 }
 const anime14={
