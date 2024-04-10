@@ -1,4 +1,11 @@
-//creating objects of anime (anime1,anime2,anime3,anime4,anime5,anime6)
+//creating objects of anime (anime1,anime2,anime3, etc..)
+
+/*
+titles: <- anime name
+imageUR: <- displays picture of said anime
+ratings: <- my personal rating of the show
+synposis: <- my thoughts and comments on the show
+*/
 
 const anime1={
     titles: "Seven Deadly Sins",
@@ -74,8 +81,6 @@ const anime12={
     synopsis: "This show was nominated as the best anime of the year. I don't really agree with it. The fight scenes are animated really well, but I didn't enjoy the plot as much as it was hyped up to be."
 }
 
-
-
 const anime13={
     titles: "Darling in the FranXX",
     imageURL: "https://cdn.myanimelist.net/images/anime/1614/90408.jpg",
@@ -112,8 +117,6 @@ const anime18={
     ratings: 10,
     synopsis: "I never thought a story about two girls named Nana would make me cry so much. They're both girls who are trying to navigate adulthood. The anime is unfinished as the author went on hiatus."
 }
-
-
 
 const anime19={
     titles: "Hunter x Hunter",
@@ -153,25 +156,24 @@ const anime24={
 }
 const anime = [anime1,anime2,anime3,anime4,anime5,anime6,anime7,anime8,anime9,anime10,anime11,anime12,anime13,anime14,anime15,anime16,anime17,anime18,anime19,anime20,anime21,anime22,anime23,anime24];
 
-
 function showCards() {
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
     const templateCard = document.querySelector(".card");
 
-    for (let i = 0; i < anime.length; i++) {
-        const r=anime[i];
+    for (let i = 0; i < anime.length; i++) { //loops through all anime objects to help display
+        const r=anime[i]; //r stores the index of anime array
+        //storing all object values to r
         let title =r.titles;
         let image=r.imageURL;
         let quote=r.synopsis;
         let rating = r.ratings.toFixed(2); //toFixed func incase i want to rate a show as "7.00" without toFixedFunc it outputs 7 without the 0's.
 
-        //******FIX IF HAVE TIME MAKE IT SO THAT ALL WHOLE NUMBERS DONT RETURN 2 DECIMAL PLACES*******
-        if(r.ratings==10){
+        if(r.ratings==10){ //leaves scores of 10's alone
             rating = r.ratings;
         }
  const nextCard = templateCard.cloneNode(true); // Copy the template card
-        editCardContent(nextCard, title, image,rating,quote); //edits title and image
+        editCardContent(nextCard, title, image,rating,quote); //edits title, image, rating, quote with object values
         cardContainer.appendChild(nextCard); // Add new card to the container
     }           
 }
@@ -198,7 +200,7 @@ function editCardContent(card, newTitle, newImageURL,newRating, newSummary) { //
     console.log("new card:", newTitle, "- html: ", card);
 }
 
-document.addEventListener("DOMContentLoaded", showCards);
+document.addEventListener("DOMContentLoaded", showCards); //waits for load then shows the cards.
 
 function removeAllCards() {
     var userChoice; //ok or no option
@@ -210,31 +212,31 @@ function removeAllCards() {
         userChoice=alert("List IS being cleared!");
     }
     else{
-        userChoice=alert("List is NOT being canceled!");
+        userChoice=alert("List is NOT being cleared!");
     }
     showCards(); // Call showCards again to refresh
 }
 
 
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded',function(){ //wait til page is loaded then apply function
 
 
-function highToLow(){
-    anime.sort(function(a,b){
-        return parseFloat(b.ratings) - parseFloat(a.ratings);
+function highToLow(){ //sorts animes from highest rating to lowest rating
+    anime.sort(function(a,b){ //take values of rankings and compare them against each other to sort
+        return parseFloat(b.ratings) - parseFloat(a.ratings); //returns whichever value is the highest
         
     });
-    console.log(anime);
-    showCards();
+    console.log(anime); //to debug on console
+    showCards(); //make the cards appear again
 }
 
-document.getElementById('highToLow').addEventListener('click',highToLow);
+document.getElementById('highToLow').addEventListener('click',highToLow); //when the button is click activate the function
 });
 
-document.addEventListener('DOMContentLoaded',function(){
+document.addEventListener('DOMContentLoaded',function(){ 
 
 
-    function lowToHigh(){
+    function lowToHigh(){ //sorts animes from lowest to highest rating
         anime.sort(function(a,b){
             return parseFloat(a.ratings) - parseFloat(b.ratings);
             
