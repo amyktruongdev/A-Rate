@@ -4,7 +4,7 @@ body {
     padding: 0;
     /*width:100%;*/
     height: auto;
-    background-color: pink;
+    background-color: #D7FAF8;
 }
 
 .main-header {
@@ -16,7 +16,8 @@ body {
 }
 
 .introText{
-    background-color: #ffcece;
+    /*background-color: #ffcece;*/
+    background-color: #a9afc6;
     font-family: "Madimi One", sans-serif;
     padding: 40px;
     margin: 25px 30px;
