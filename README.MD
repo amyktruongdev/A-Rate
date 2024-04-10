@@ -1,44 +1,24 @@
 # SEA Stage 2 - Data Catalog Project
 
-This is the instructions, requirements, and starter for stage two of the Snap Engineering Academy application process.
+##A-Rate:
 
-## Your Task:
-
-<h3 align="center">Create a "catalog" website for something you're passionate about.</h1>
+<h3 align="center">My personal anime rating catalog I created to display data dynamically!.</h1>
 
 > [!NOTE]
-> If you have not used Github or programmed a website with JavaScript before, that's OK! Part of the challenge is figuring out things you're not familiar with.  
+> Some of these ratings scores out of 10 might be lower than what I orignally wanted to rate them, but for the sake of data I had to make some lower!
 
-## Requirements - Your Catalog Website Should...
+##A-Rate Usage
+- There is an introductory text explaining the purpose of my catalog and tips on how to navigate through it.
+- Each card has data values such as the title of the anime, the score I gave the anime out of 10, and my synopsis (opinion) of the anime or why I gave the score.
+- The options bar has the options: "High to Low, Low to High, and Clear".
+- "The High to Low" button displays the data in cards from High to Low based on the score I gave the anime out of 10.
+- The "Low to High" button displays the data in cards from Low to High based on the score I gave the anime out of 10.
+- The "Clear" button gets rid of all of the cards.
 
- - Show off your understanding of basic data structures: arrays and objects.  
- - Display a substantial amount of interesting data in a "Catalog"! You can look online for datasets or make your own. Your data should be easy to find in your source code, held either in variables defined at the top of scripts.js or imported from a file you added.  
- - Handle data "dynamically." If the data in your data structures changes, then your code should display those changes after a reload.
-Have two or more features that “operate” on your data, modifying the data and how you display it. Data “operations” are things like filtering, searching, sorting, updating, adding, removing and so on. *Imagine what users would want to do while using your catalog website, and make it a feature!*  
- - Look polished. Use HTML and CSS to customize how you display your data. Display your data thoughtfully, as it’s much more useful that way!  
- - Be built from this starter code, though you can change anything you like. *The starter code shows a simple example of a data catalog website and introduces you to JS/html/css, but you should be making significant changes and improvements.*  
- - Be an original website. Please do not submit something you’ve already done for a school project, internship, or client. *Using online resources for reference and guidance is encouraged, but be a responsible developer and make sure you understand every line of code in your project.*
+Anime is something I grew up with so it only made sense to make a catalog to show all off! This catalog has a personal few touches of mine, including colors I like and even Pompompurin, the yellow dog you see in the A-Rate logo. I planned my design initally using Figma and then went straight to implementing my design with Visual Studio Code.
+This project was really fun to make. I now have a place to display all of the animes I've watched. It was challenging navigating through using JavaScript because I've only worked with it a few times, but the challenge was worth it!! I learned a lot more about JavaScript than I've ever had before.
 
+Thank you for taking the time to read this!
 
-## Getting Started
-
-1. Create a Github account if you haven't already.
-
-2. Click the green "Use as Template" button in the upper right corner, then choose the "create a new repository" option.  
-  a. Choose yourself as the owner  
-  b. Give your repository a name  
-  c. Click "Create Repository"  
-
-3. Copy or Download the repository files to your own computer. There are many ways to do this, it's up to you!
-
-4. Start editing the website by using a text editor for the `index.html`, `style.css`, and `scripts.js` files. As you edit, preview your website by opening `index.html` with your web browser (double clicking `index.html` should open it in a web browser). When you're done, you should see something like this:
-
-<img height="300" alt="Screenshot 2024-03-27 at 12 51 33 PM" src="https://github.com/Snap-Engineering-Academy-2023/rn_lab1/assets/7607483/fdd57236-50fe-48ca-956d-d9b4b12db038">
-
-## Submitting
-
-1. Publish your website to the internet! You can use any method you like, but we recommend [Github Pages.](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
-
-2. Update your Github repository so it has the most recent version of your website's source code.
-
-3. Submit the URL to your published website and the link to your Github repository to the google form in your email.
+~Always Grateful,
+Amy Truong
