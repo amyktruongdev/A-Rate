@@ -1,13 +1,13 @@
 # SEA Stage 2 - Data Catalog Project
 
-##A-Rate:
+A-Rate:
 
 <h3 align="center">My personal anime rating catalog I created to display data dynamically!.</h1>
 
 > [!NOTE]
 > Some of these ratings scores out of 10 might be lower than what I orignally wanted to rate them, but for the sake of data I had to make some lower!
 
-##A-Rate Usage
+A-Rate Usage
 - There is an introductory text explaining the purpose of my catalog and tips on how to navigate through it.
 - Each card has data values such as the title of the anime, the score I gave the anime out of 10, and my synopsis (opinion) of the anime or why I gave the score.
 - The options bar has the options: "High to Low, Low to High, and Clear".
